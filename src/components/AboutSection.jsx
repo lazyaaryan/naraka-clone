@@ -36,7 +36,7 @@ export default function AboutSection() {
                 <div className="about-image-wrap">
                     <img
                         className="about-image"
-                        src="/gallery1.jpg"
+                        src={`${import.meta.env.BASE_URL}gallery1.jpg`}
                         alt="Anime battle scene"
                     />
                 </div>

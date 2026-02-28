@@ -2,11 +2,12 @@ import { useState } from 'react';
 
 const tabs = ['WALLPAPER', 'SCREENSHOT', 'VIDEO'];
 
+const base = import.meta.env.BASE_URL;
 const galleryImages = [
-    { src: '/gallery1.jpg', alt: 'Demon Slayer - Akaza eye reflection' },
-    { src: '/gallery2.jpg', alt: 'One Piece - Luffy' },
-    { src: '/gallery3.jpg', alt: 'Dragon Ball - Goku & Vegeta' },
-    { src: '/gallery4.jpg', alt: 'Demon Slayer - Tanjiro vs Akaza' },
+    { src: `${base}gallery1.jpg`, alt: 'Demon Slayer - Akaza eye reflection' },
+    { src: `${base}gallery2.jpg`, alt: 'One Piece - Luffy' },
+    { src: `${base}gallery3.jpg`, alt: 'Dragon Ball - Goku & Vegeta' },
+    { src: `${base}gallery4.jpg`, alt: 'Demon Slayer - Tanjiro vs Akaza' },
 ];
 
 export default function MediaSection() {
