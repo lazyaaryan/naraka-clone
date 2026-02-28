@@ -1,0 +1,154 @@
+.footer {
+    background: #7f1d1d;
+    color: #fff;
+    padding: 40px 60px 30px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-link {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
+
+.footer-divider {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 20px;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-follow {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.footer-social-icon {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-icon:hover {
+    color: #fff;
+    transform: scale(1.15);
+}
+
+.footer-partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.footer-partner-logos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.partner-logo {
+    font-size: clamp(18px, 2.5vw, 28px);
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.footer-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.rating-age {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.rating-label {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.5px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-studio {
+    min-width: 100px;
+}
+
+.studio-name {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-legal {
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-legal a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #fff;
+}

@@ -1,0 +1,144 @@
+.media {
+    position: relative;
+    padding: 60px 60px 50px;
+    background: linear-gradient(180deg, #f0ebe0 0%, #e8e2d2 100%);
+    color: #1a1a1a;
+}
+
+.media-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(32px, 5vw, 54px);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1a1a1a;
+}
+
+.media-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.media-tab {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.media-tab.active,
+.media-tab:hover {
+    color: #1a1a1a;
+}
+
+.media-tab-divider {
+    color: #b91c1c;
+    font-size: 24px;
+    margin: 0 4px;
+    font-weight: 300;
+}
+
+.media-main {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    border: 5px solid #7f1d1d;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background: #111;
+}
+
+.media-main-image-wrap {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.media-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.media-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 50px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s ease;
+}
+
+.media-arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.media-arrow-left {
+    left: 0;
+}
+
+.media-arrow-right {
+    right: 0;
+}
+
+.media-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.media-thumb {
+    width: 140px;
+    height: 80px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.2s ease;
+    padding: 0;
+    background: none;
+    opacity: 0.5;
+    filter: grayscale(0.8);
+}
+
+.media-thumb.active,
+.media-thumb:hover {
+    border-color: #b91c1c;
+    opacity: 1;
+    filter: grayscale(0);
+}
+
+.media-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

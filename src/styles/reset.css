@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+}
+
+@keyframes heroTitleIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .navbar-center,
+    .navbar-socials {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: clamp(48px, 10vw, 80px);
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 10px 16px;
+    }
+
+    .hero-content {
+        left: 4%;
+        bottom: 12%;
+    }
+
+    .hero-download-btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .hero-platforms {
+        gap: 14px;
+    }
+
+    .hero-platform-icon {
+        font-size: 22px;
+    }
+}
